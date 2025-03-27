@@ -43,7 +43,7 @@
         <school_year>2025-2026</school_year>
     </student>
     <student>
-        <picture>https://th.bing.com/th/id/R.7fdecaba43d5443b85cee1d32d4c267c?rik=GUr3bePQCjGsIA&riu=http%3a%2f%2fwww.jljavier.com%2fwp-content%2fuploads%2f2022%2f06%2fPhoto-22.jpg</picture>
+        <picture>https://th.bing.com/th/id/R.7fdecaba43d5443b85cee1d32d4c267c?rik=GUr3bePQCjGsIA&amp;riu=http%3a%2f%2fwww.jljavier.com%2fwp-content%2fuploads%2f2022%2f06%2fPhoto-22.jpg</picture>
         <name>Jessica Esnyr Villanueva</name>
         <course>BSIT</course>
         <year_level_section>3BG2</year_level_section>
