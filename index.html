@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .student-card {
+            border: 3px solid black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .student-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bulacan State University</h1>
+    <h2>Library Users</h2>
+    <div id="student-list"></div>
+    
+    <script>
+        fetch('johnexekiel_deguzman.xml')
+            .then(response => response.text())
+            .then(xmlText => {
+                let parser = new DOMParser();
+                let xml = parser.parseFromString(xmlText, 'application/xml');
+                let students = xml.getElementsByTagName('student');
+                let output = '<div class="container">';
+                
+                for (let student of students) {
+                    let picture = student.getElementsByTagName('picture')[0].textContent;
+                    let name = student.getElementsByTagName('name')[0].textContent;
+                    let course = student.getElementsByTagName('course')[0].textContent;
+                    let year = student.getElementsByTagName('year_level_section')[0].textContent;
+                    let advisor = student.getElementsByTagName('adviser')[0].textContent;
+                    let schoolYear = student.getElementsByTagName('school_year')[0].textContent;
+
+                    output += `
+                        <div class="student-card">
+                            <img src="${picture}" alt="${name}">
+                            <p><strong>Name:</strong> ${name}</p>
+                            <p><strong>Course:</strong> ${course}</p>
+                            <p><strong>Year Level / Section:</strong> ${year}</p>
+                            <p><strong>Adviser:</strong> ${advisor}</p>
+                            <p><strong>School Year:</strong> ${schoolYear}</p>
+                        </div>
+                    `;
+                }
+                output += '</div>';
+                document.getElementById('student-list').innerHTML = output;
+            })
+            .catch(error => console.log('Error loading XML:', error));
+    </script>
+</body>
+</html>

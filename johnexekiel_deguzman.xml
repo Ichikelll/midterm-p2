@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<library_users>
+    <student>
+        <picture>https://i.mydramalist.com/1Bgo3_5_c.jpg</picture>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://i.mydramalist.com/WPvVJO_5_c.jpg</picture>
+        <name>Ranolo Santos</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://starsunfolded.com/wp-content/uploads/2025/03/Dustin-Yu.jpg</picture>
+        <name>Carlos Reyes</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://iv1.lisimg.com/image/28418931/740full-kira-balinger.jpg</picture>
+        <name>Ana Lopez</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://assets-starmagic.abs-cbn.com/wp-content/uploads/2022/03/22140309/Klarisse.jpg</picture>
+        <name>Michaela Fernandez</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://th.bing.com/th/id/R.7fdecaba43d5443b85cee1d32d4c267c?rik=GUr3bePQCjGsIA&riu=http%3a%2f%2fwww.jljavier.com%2fwp-content%2fuploads%2f2022%2f06%2fPhoto-22.jpg</picture>
+        <name>Jessica Esnyr Villanueva</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://aphrodite.gmanetwork.com/entertainment/photos/photo/will_ashley_s_ig_photos_that_scream_summer_hot___1681198340.jpg</picture>
+        <name>Daniel Cruz</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://aphrodite.gmanetwork.com/entertainment/special_pages/900_675_KP-Thumbnail_-20230223221739.jpg</picture>
+        <name>Emily Garcia</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://images.summitmedia-digital.com/candy/images/2022/11/02/265216614_1031901347593014_1770209648185736576_n.jpg</picture>
+        <name>Roberta Mendoza</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+    <student>
+        <picture>https://images.summitmedia-digital.com/candy/images/2022/10/20/alexa-ilacad-beauty-makeup-hair-trends-7.jpg</picture>
+        <name>Patricia Diaz</name>
+        <course>BSIT</course>
+        <year_level_section>3BG2</year_level_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </student>
+</library_users>
