@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Users</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ABC Colleges</h1>
+    <h2>Library users</h2>
+    <div id="users-container"></div>
+	
+
+
+    <script>
+        async function loadXML() {
+            const response = await fetch("johnexekiel_deguzman.xml");
+            const xmlText = await response.text();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+
+            const users = xmlDoc.getElementsByTagName("user");
+            let htmlContent = "";
+
+            for (let i = 0; i < users.length; i++) {
+                let picture = users[i].getElementsByTagName("picture")[0].textContent;
+                let name = users[i].getElementsByTagName("name")[0].textContent;
+                let course = users[i].getElementsByTagName("course")[0].textContent;
+                let section = users[i].getElementsByTagName("year_level_section")[0].textContent;
+                let adviser = users[i].getElementsByTagName("adviser")[0].textContent;
+                let schoolYear = users[i].getElementsByTagName("school_year")[0].textContent;
+
+                htmlContent += `
+                    <div class="user-card">
+                        <img src="${picture}" alt="Student Image">
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Course:</strong> ${course}</p>
+                        <p><strong>Year Level / Section:</strong> ${section}</p>
+                        <p><strong>Adviser:</strong> ${adviser}</p>
+                        <p><strong>School Year:</strong> ${schoolYear}</p>
+                    </div>
+                `;
+            }
+
+            document.getElementById("users-container").innerHTML = htmlContent;
+        }
+
+        loadXML();
+    </script>
+</body>
+</html>
